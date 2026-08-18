@@ -42,6 +42,21 @@ function calcular(a, b, operacao) {
 	}else{
 		console.log("Função desconhecida")
 	}
+
+	// pode ser feito no swtich case 
+
+	switch(operacao){
+		case "somar":
+			return somar(a, b)
+		case "subitrair":
+			return subtrair(a, b)
+		case "multiplicar":
+			return multiplicar(a, b)
+		case "dividir":
+			return dividir(a, b)
+		default:
+			return "Função desconhecida"
+	}
 }
 
 // TODO:
